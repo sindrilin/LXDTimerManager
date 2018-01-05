@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LXDTimerManager_Example' do
+  pod 'LXDTimerManager', :path => '../'
+
+  target 'LXDTimerManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
