@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01750DEC76F69485D2902B508845CAF7 /* LXDTimerManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A76EF1A8B51FCDD96DAEBF560AAF697 /* LXDTimerManager-dummy.m */; };
+		43555032966B59D4E1F37B8098AA5663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4E5DB3FC77C3036FB2CFC7BE6A2D2B56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4F524709590C19A0CD5D380FC20483D2 /* Pods-LXDTimerManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E75405FAC3E0975E8B82C0771CD49DAB /* Pods-LXDTimerManager_Tests-dummy.m */; };
+		78E22A969FCB1A319DE066CD86FDAFA1 /* LXDTimerManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FA3B5254D5106859D7537753769E8C /* LXDTimerManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B404C445803C88794BD16AB9F54C0731 /* Pods-LXDTimerManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA11AE1E5FD3970AEFDDE2F1562770C /* Pods-LXDTimerManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD83D61C5780F5BD4350F0C670A48171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D7744B91E185C6DAB1CA48709F589543 /* Pods-LXDTimerManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDCCBDB5AD75FE7B5ABCF4B69FFF63AF /* Pods-LXDTimerManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF146B321FFF860100BB2B1D /* NSObject+PerformTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = EF146B2B1FFF85AA00BB2B1D /* NSObject+PerformTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF24E0A520006875003E94EA /* LXDTimerManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF146B291FFF85AA00BB2B1D /* LXDTimerManager.mm */; };
+		EF24E0A620006875003E94EA /* LXDTimerManager.h in Sources */ = {isa = PBXBuildFile; fileRef = EF146B2A1FFF85AA00BB2B1D /* LXDTimerManager.h */; };
+		EF24E0A720006875003E94EA /* NSObject+PerformTimer.h in Sources */ = {isa = PBXBuildFile; fileRef = EF146B2B1FFF85AA00BB2B1D /* NSObject+PerformTimer.h */; };
+		EF24E0A820006875003E94EA /* NSObject+PerformTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF146B281FFF85AA00BB2B1D /* NSObject+PerformTimer.m */; };
+		EF24E0A920006875003E94EA /* LXDTimerStructure.h in Sources */ = {isa = PBXBuildFile; fileRef = EF146B311FFF85AA00BB2B1D /* LXDTimerStructure.h */; };
+		EF24E0AA2000687A003E94EA /* LXDBaseHashmap.h in Sources */ = {isa = PBXBuildFile; fileRef = EF146B2F1FFF85AA00BB2B1D /* LXDBaseHashmap.h */; };
+		EF24E0AB2000687A003E94EA /* LXDBaseHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF146B2D1FFF85AA00BB2B1D /* LXDBaseHashmap.mm */; };
+		EF24E0AC2000687A003E94EA /* LXDReceiverHashmap.h in Sources */ = {isa = PBXBuildFile; fileRef = EF146B2E1FFF85AA00BB2B1D /* LXDReceiverHashmap.h */; };
+		EF24E0AD2000687A003E94EA /* LXDReceiverHashmap.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF146B301FFF85AA00BB2B1D /* LXDReceiverHashmap.mm */; };
+		F3945A26C972464075A0703AAEADB02E /* Pods-LXDTimerManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B020C8EE3349E50542C6E6BBBD8A2F /* Pods-LXDTimerManager_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B70C10E2B992B55B82E5C731B5A27FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BD1A23EE671BFB0A20B092838C71CF3;
+			remoteInfo = LXDTimerManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07FBE8334613C18D2AD00860C8A07B35 /* Pods_LXDTimerManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXDTimerManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A18EF9FC3D2541399ED62326A0073CF /* LXDTimerManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXDTimerManager.xcconfig; sourceTree = "<group>"; };
+		3A76EF1A8B51FCDD96DAEBF560AAF697 /* LXDTimerManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXDTimerManager-dummy.m"; sourceTree = "<group>"; };
+		439B19A3B881DE270AB5BD5DE75DE6B5 /* Pods-LXDTimerManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LXDTimerManager_Example.modulemap"; sourceTree = "<group>"; };
+		5C7CB1D17637FB7DE5BD1C7622A3437B /* Pods-LXDTimerManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXDTimerManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		5FFF50EB9BFDEBB85C024A6A82FAB947 /* Pods-LXDTimerManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXDTimerManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6DDEB046770C22DEBF65489451D2F8B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E6CC5035D01345B89CD9F2659E0C836 /* LXDTimerManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXDTimerManager-prefix.pch"; sourceTree = "<group>"; };
+		79008D7C913FC8A93985F6C9E31D9C2C /* Pods-LXDTimerManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXDTimerManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7F05C5A6A7637B4FC2694EA7ACF05C22 /* Pods-LXDTimerManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXDTimerManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		80932856C033AD220A0AB3E596EEF249 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		835719266B855A8E36D5FFD6DAF4EA89 /* Pods-LXDTimerManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXDTimerManager_Example-resources.sh"; sourceTree = "<group>"; };
+		8B1922A00D42BB7CC6B70D23CE39FACF /* Pods-LXDTimerManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXDTimerManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BC0772F4DE3D88C74616EE41C208890 /* Pods-LXDTimerManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXDTimerManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A0FA3B5254D5106859D7537753769E8C /* LXDTimerManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXDTimerManager-umbrella.h"; sourceTree = "<group>"; };
+		A27F75E12AF56AEB0540636F9C198630 /* Pods-LXDTimerManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXDTimerManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A65AB7FBD74F585A1D04CB6F93B6AEC1 /* LXDTimerManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LXDTimerManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EF595379D4BE0A640424C5B6873FE7 /* Pods_LXDTimerManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXDTimerManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DA31579AC496B7516BB01E011DD87A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B0B514817F10C6F6B821D89C2FA9F8 /* Pods-LXDTimerManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXDTimerManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5B020C8EE3349E50542C6E6BBBD8A2F /* Pods-LXDTimerManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXDTimerManager_Example-dummy.m"; sourceTree = "<group>"; };
+		CDCCBDB5AD75FE7B5ABCF4B69FFF63AF /* Pods-LXDTimerManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXDTimerManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		D8415C7BA9033E5286BDC47936ABC243 /* LXDTimerManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LXDTimerManager.modulemap; sourceTree = "<group>"; };
+		DB6A3F946D4282A95FCBEE4C0BEF024A /* Pods-LXDTimerManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LXDTimerManager_Tests.modulemap"; sourceTree = "<group>"; };
+		DBA11AE1E5FD3970AEFDDE2F1562770C /* Pods-LXDTimerManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXDTimerManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DED63933C6F9D9A28F302D6946ADE647 /* Pods-LXDTimerManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXDTimerManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E4984A36E15020D466E5DDD986A7C61A /* Pods-LXDTimerManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXDTimerManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E75405FAC3E0975E8B82C0771CD49DAB /* Pods-LXDTimerManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXDTimerManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		EF146B281FFF85AA00BB2B1D /* NSObject+PerformTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformTimer.m"; sourceTree = "<group>"; };
+		EF146B291FFF85AA00BB2B1D /* LXDTimerManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LXDTimerManager.mm; sourceTree = "<group>"; };
+		EF146B2A1FFF85AA00BB2B1D /* LXDTimerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXDTimerManager.h; sourceTree = "<group>"; };
+		EF146B2B1FFF85AA00BB2B1D /* NSObject+PerformTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformTimer.h"; sourceTree = "<group>"; };
+		EF146B2D1FFF85AA00BB2B1D /* LXDBaseHashmap.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LXDBaseHashmap.mm; sourceTree = "<group>"; };
+		EF146B2E1FFF85AA00BB2B1D /* LXDReceiverHashmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXDReceiverHashmap.h; sourceTree = "<group>"; };
+		EF146B2F1FFF85AA00BB2B1D /* LXDBaseHashmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXDBaseHashmap.h; sourceTree = "<group>"; };
+		EF146B301FFF85AA00BB2B1D /* LXDReceiverHashmap.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LXDReceiverHashmap.mm; sourceTree = "<group>"; };
+		EF146B311FFF85AA00BB2B1D /* LXDTimerStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXDTimerStructure.h; sourceTree = "<group>"; };
+		F4A6C489A5FCDEF42A8EE28B5EED91D7 /* Pods-LXDTimerManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXDTimerManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0445C6D4E80075BB3066247D32D2BC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD83D61C5780F5BD4350F0C670A48171 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF445970DB5B314B880F8574E4FEA71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43555032966B59D4E1F37B8098AA5663 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED30934075B1ADDAD8C02E3B596F246 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5DB3FC77C3036FB2CFC7BE6A2D2B56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49EE6A02759EB774DD75C4F1749DFC6C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DDEB046770C22DEBF65489451D2F8B3 /* Info.plist */,
+				D8415C7BA9033E5286BDC47936ABC243 /* LXDTimerManager.modulemap */,
+				2A18EF9FC3D2541399ED62326A0073CF /* LXDTimerManager.xcconfig */,
+				3A76EF1A8B51FCDD96DAEBF560AAF697 /* LXDTimerManager-dummy.m */,
+				6E6CC5035D01345B89CD9F2659E0C836 /* LXDTimerManager-prefix.pch */,
+				A0FA3B5254D5106859D7537753769E8C /* LXDTimerManager-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LXDTimerManager";
+			sourceTree = "<group>";
+		};
+		78C4AA2ECA8B551D976A2BAF31A6A059 /* Pods-LXDTimerManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B8DA31579AC496B7516BB01E011DD87A /* Info.plist */,
+				439B19A3B881DE270AB5BD5DE75DE6B5 /* Pods-LXDTimerManager_Example.modulemap */,
+				DED63933C6F9D9A28F302D6946ADE647 /* Pods-LXDTimerManager_Example-acknowledgements.markdown */,
+				7F05C5A6A7637B4FC2694EA7ACF05C22 /* Pods-LXDTimerManager_Example-acknowledgements.plist */,
+				C5B020C8EE3349E50542C6E6BBBD8A2F /* Pods-LXDTimerManager_Example-dummy.m */,
+				79008D7C913FC8A93985F6C9E31D9C2C /* Pods-LXDTimerManager_Example-frameworks.sh */,
+				835719266B855A8E36D5FFD6DAF4EA89 /* Pods-LXDTimerManager_Example-resources.sh */,
+				CDCCBDB5AD75FE7B5ABCF4B69FFF63AF /* Pods-LXDTimerManager_Example-umbrella.h */,
+				9BC0772F4DE3D88C74616EE41C208890 /* Pods-LXDTimerManager_Example.debug.xcconfig */,
+				F4A6C489A5FCDEF42A8EE28B5EED91D7 /* Pods-LXDTimerManager_Example.release.xcconfig */,
+			);
+			name = "Pods-LXDTimerManager_Example";
+			path = "Target Support Files/Pods-LXDTimerManager_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CC7119E05E50C5800F3B0E83F64C6374 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C83AF0DBC3C8DC7979A1E57C19ED7023 /* Products */,
+				FB03E2F4CD453CF3CB86DC7AFF20AE63 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		907CD78AADB777260A0C9534C5415AC8 /* LXDTimerManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF146B271FFF85AA00BB2B1D /* object-c */,
+				EF146B2C1FFF85AA00BB2B1D /* structure */,
+				49EE6A02759EB774DD75C4F1749DFC6C /* Support Files */,
+			);
+			name = LXDTimerManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B760E5757FE2F11A594E352A25AD25B4 /* Pods-LXDTimerManager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				80932856C033AD220A0AB3E596EEF249 /* Info.plist */,
+				DB6A3F946D4282A95FCBEE4C0BEF024A /* Pods-LXDTimerManager_Tests.modulemap */,
+				C3B0B514817F10C6F6B821D89C2FA9F8 /* Pods-LXDTimerManager_Tests-acknowledgements.markdown */,
+				E4984A36E15020D466E5DDD986A7C61A /* Pods-LXDTimerManager_Tests-acknowledgements.plist */,
+				E75405FAC3E0975E8B82C0771CD49DAB /* Pods-LXDTimerManager_Tests-dummy.m */,
+				8B1922A00D42BB7CC6B70D23CE39FACF /* Pods-LXDTimerManager_Tests-frameworks.sh */,
+				5C7CB1D17637FB7DE5BD1C7622A3437B /* Pods-LXDTimerManager_Tests-resources.sh */,
+				DBA11AE1E5FD3970AEFDDE2F1562770C /* Pods-LXDTimerManager_Tests-umbrella.h */,
+				5FFF50EB9BFDEBB85C024A6A82FAB947 /* Pods-LXDTimerManager_Tests.debug.xcconfig */,
+				A27F75E12AF56AEB0540636F9C198630 /* Pods-LXDTimerManager_Tests.release.xcconfig */,
+			);
+			name = "Pods-LXDTimerManager_Tests";
+			path = "Target Support Files/Pods-LXDTimerManager_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C83AF0DBC3C8DC7979A1E57C19ED7023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A65AB7FBD74F585A1D04CB6F93B6AEC1 /* LXDTimerManager.framework */,
+				07FBE8334613C18D2AD00860C8A07B35 /* Pods_LXDTimerManager_Example.framework */,
+				A8EF595379D4BE0A640424C5B6873FE7 /* Pods_LXDTimerManager_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC7119E05E50C5800F3B0E83F64C6374 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				907CD78AADB777260A0C9534C5415AC8 /* LXDTimerManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EF146B271FFF85AA00BB2B1D /* object-c */ = {
+			isa = PBXGroup;
+			children = (
+				EF146B291FFF85AA00BB2B1D /* LXDTimerManager.mm */,
+				EF146B2A1FFF85AA00BB2B1D /* LXDTimerManager.h */,
+				EF146B2B1FFF85AA00BB2B1D /* NSObject+PerformTimer.h */,
+				EF146B281FFF85AA00BB2B1D /* NSObject+PerformTimer.m */,
+			);
+			name = "object-c";
+			path = "LXDTimerManager/Classes/object-c";
+			sourceTree = "<group>";
+		};
+		EF146B2C1FFF85AA00BB2B1D /* structure */ = {
+			isa = PBXGroup;
+			children = (
+				EF146B311FFF85AA00BB2B1D /* LXDTimerStructure.h */,
+				EF146B2F1FFF85AA00BB2B1D /* LXDBaseHashmap.h */,
+				EF146B2D1FFF85AA00BB2B1D /* LXDBaseHashmap.mm */,
+				EF146B2E1FFF85AA00BB2B1D /* LXDReceiverHashmap.h */,
+				EF146B301FFF85AA00BB2B1D /* LXDReceiverHashmap.mm */,
+			);
+			name = structure;
+			path = LXDTimerManager/Classes/structure;
+			sourceTree = "<group>";
+		};
+		FB03E2F4CD453CF3CB86DC7AFF20AE63 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78C4AA2ECA8B551D976A2BAF31A6A059 /* Pods-LXDTimerManager_Example */,
+				B760E5757FE2F11A594E352A25AD25B4 /* Pods-LXDTimerManager_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A93811A1EE22F9DD63CC02EC41DEBC5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E22A969FCB1A319DE066CD86FDAFA1 /* LXDTimerManager-umbrella.h in Headers */,
+				EF146B321FFF860100BB2B1D /* NSObject+PerformTimer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB8BAAABA66B1C80FDAAD3F33B5FC83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B404C445803C88794BD16AB9F54C0731 /* Pods-LXDTimerManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEECB6061063A33BA10788DF93F597F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7744B91E185C6DAB1CA48709F589543 /* Pods-LXDTimerManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D6D2C743DE4C66DE2CE0E208A7E7402 /* Pods-LXDTimerManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7549EB8EBFA40928D15B8D3B8F521A /* Build configuration list for PBXNativeTarget "Pods-LXDTimerManager_Example" */;
+			buildPhases = (
+				B0706202AE36FA83CE8085C7537C24ED /* Sources */,
+				DAF445970DB5B314B880F8574E4FEA71 /* Frameworks */,
+				EEECB6061063A33BA10788DF93F597F0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22E64E11FB101FC6D551BAC7BBF63E0F /* PBXTargetDependency */,
+			);
+			name = "Pods-LXDTimerManager_Example";
+			productName = "Pods-LXDTimerManager_Example";
+			productReference = 07FBE8334613C18D2AD00860C8A07B35 /* Pods_LXDTimerManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6BD1A23EE671BFB0A20B092838C71CF3 /* LXDTimerManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75B2D0FD8E4D55769895473B8C980A3F /* Build configuration list for PBXNativeTarget "LXDTimerManager" */;
+			buildPhases = (
+				2F80C10A19BDF67A20DB95FE7CAE8A0C /* Sources */,
+				FED30934075B1ADDAD8C02E3B596F246 /* Frameworks */,
+				A93811A1EE22F9DD63CC02EC41DEBC5A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXDTimerManager;
+			productName = LXDTimerManager;
+			productReference = A65AB7FBD74F585A1D04CB6F93B6AEC1 /* LXDTimerManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BDAE98CCAEA1ED2CA4B07021AE964C8 /* Pods-LXDTimerManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D28A3CBA25E29667E0CBE0D42C6EF5C /* Build configuration list for PBXNativeTarget "Pods-LXDTimerManager_Tests" */;
+			buildPhases = (
+				2D2C156B2FB9F97318BDF1CE52CB1675 /* Sources */,
+				0445C6D4E80075BB3066247D32D2BC6B /* Frameworks */,
+				CEB8BAAABA66B1C80FDAAD3F33B5FC83 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LXDTimerManager_Tests";
+			productName = "Pods-LXDTimerManager_Tests";
+			productReference = A8EF595379D4BE0A640424C5B6873FE7 /* Pods_LXDTimerManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C83AF0DBC3C8DC7979A1E57C19ED7023 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BD1A23EE671BFB0A20B092838C71CF3 /* LXDTimerManager */,
+				1D6D2C743DE4C66DE2CE0E208A7E7402 /* Pods-LXDTimerManager_Example */,
+				8BDAE98CCAEA1ED2CA4B07021AE964C8 /* Pods-LXDTimerManager_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D2C156B2FB9F97318BDF1CE52CB1675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F524709590C19A0CD5D380FC20483D2 /* Pods-LXDTimerManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F80C10A19BDF67A20DB95FE7CAE8A0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF24E0AA2000687A003E94EA /* LXDBaseHashmap.h in Sources */,
+				EF24E0AB2000687A003E94EA /* LXDBaseHashmap.mm in Sources */,
+				EF24E0AC2000687A003E94EA /* LXDReceiverHashmap.h in Sources */,
+				EF24E0AD2000687A003E94EA /* LXDReceiverHashmap.mm in Sources */,
+				EF24E0A520006875003E94EA /* LXDTimerManager.mm in Sources */,
+				EF24E0A620006875003E94EA /* LXDTimerManager.h in Sources */,
+				EF24E0A720006875003E94EA /* NSObject+PerformTimer.h in Sources */,
+				EF24E0A820006875003E94EA /* NSObject+PerformTimer.m in Sources */,
+				EF24E0A920006875003E94EA /* LXDTimerStructure.h in Sources */,
+				01750DEC76F69485D2902B508845CAF7 /* LXDTimerManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0706202AE36FA83CE8085C7537C24ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3945A26C972464075A0703AAEADB02E /* Pods-LXDTimerManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22E64E11FB101FC6D551BAC7BBF63E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LXDTimerManager;
+			target = 6BD1A23EE671BFB0A20B092838C71CF3 /* LXDTimerManager */;
+			targetProxy = 1B70C10E2B992B55B82E5C731B5A27FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21CA4B4C2FEDBE64E76BB87C642D46CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A18EF9FC3D2541399ED62326A0073CF /* LXDTimerManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LXDTimerManager/LXDTimerManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXDTimerManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXDTimerManager/LXDTimerManager.modulemap";
+				PRODUCT_NAME = LXDTimerManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5B108DE600D1856FDD0CC0A808A39128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FFF50EB9BFDEBB85C024A6A82FAB947 /* Pods-LXDTimerManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXDTimerManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXDTimerManager_Tests/Pods-LXDTimerManager_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LXDTimerManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F5A5D4779F3097D820A151F9B35EF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC0772F4DE3D88C74616EE41C208890 /* Pods-LXDTimerManager_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXDTimerManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXDTimerManager_Example/Pods-LXDTimerManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LXDTimerManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70F7C31612ABE67B3C721F5DAE20C8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A18EF9FC3D2541399ED62326A0073CF /* LXDTimerManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LXDTimerManager/LXDTimerManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXDTimerManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXDTimerManager/LXDTimerManager.modulemap";
+				PRODUCT_NAME = LXDTimerManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C669F933BD798B3D1B9756C9B689A12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A27F75E12AF56AEB0540636F9C198630 /* Pods-LXDTimerManager_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXDTimerManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXDTimerManager_Tests/Pods-LXDTimerManager_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LXDTimerManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA9CDC9FD1B4D08B51D8335742996A79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4A6C489A5FCDEF42A8EE28B5EED91D7 /* Pods-LXDTimerManager_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXDTimerManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXDTimerManager_Example/Pods-LXDTimerManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LXDTimerManager_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D28A3CBA25E29667E0CBE0D42C6EF5C /* Build configuration list for PBXNativeTarget "Pods-LXDTimerManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B108DE600D1856FDD0CC0A808A39128 /* Debug */,
+				C669F933BD798B3D1B9756C9B689A12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7549EB8EBFA40928D15B8D3B8F521A /* Build configuration list for PBXNativeTarget "Pods-LXDTimerManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F5A5D4779F3097D820A151F9B35EF8F /* Debug */,
+				DA9CDC9FD1B4D08B51D8335742996A79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75B2D0FD8E4D55769895473B8C980A3F /* Build configuration list for PBXNativeTarget "LXDTimerManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CA4B4C2FEDBE64E76BB87C642D46CD /* Debug */,
+				70F7C31612ABE67B3C721F5DAE20C8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

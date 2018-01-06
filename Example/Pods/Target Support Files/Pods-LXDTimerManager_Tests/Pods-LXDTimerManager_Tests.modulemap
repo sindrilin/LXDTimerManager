@@ -1,0 +1,6 @@
+framework module Pods_LXDTimerManager_Tests {
+  umbrella header "Pods-LXDTimerManager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 //
 
 #import "LXDViewController.h"
+#import <LXDTimerManager/NSObject+PerformTimer.h>
 
 @interface LXDViewController ()
 
@@ -17,13 +18,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)clickedToCountDown: (UIButton *)sender {
+    [sender beginCountDown: ^(id receiver, NSInteger leftTime, BOOL *isStop) {
+        if (leftTime > 0) {
+            [receiver setTitle: [NSString stringWithFormat: @"%lu s", leftTime] forState: UIControlStateNormal];
+        } else {
+            [receiver setTitle: @"Button" forState: UIControlStateNormal];
+        }
+    } forSeconds: 15];
 }
 
 @end

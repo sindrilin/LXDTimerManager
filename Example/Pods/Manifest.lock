@@ -1,0 +1,16 @@
+PODS:
+  - LXDTimerManager (0.1.0)
+
+DEPENDENCIES:
+  - LXDTimerManager (from `../`)
+
+EXTERNAL SOURCES:
+  LXDTimerManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LXDTimerManager: 9cb14bc9a589f3ca75e0402ea63e77bd9c638461
+
+PODFILE CHECKSUM: 6b0fd7b0974beb2b11a6d712acdeec669bdcb5ea
+
+COCOAPODS: 1.3.1

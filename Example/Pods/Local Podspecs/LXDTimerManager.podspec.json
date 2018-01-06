@@ -1,0 +1,22 @@
+{
+  "name": "LXDTimerManager",
+  "version": "0.1.0",
+  "summary": "A short description of LXDTimerManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/JustkeepRunning/LXDTimerManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "JustkeepRunning": "634893985@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/JustkeepRunning/LXDTimerManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LXDTimerManager/Classes/**/*"
+}
