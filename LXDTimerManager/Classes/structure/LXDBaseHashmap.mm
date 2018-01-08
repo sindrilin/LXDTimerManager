@@ -10,7 +10,7 @@
 #include <string.h>
 
 
-#define hash_bucket_count 15
+#define hash_bucket_count 7
 
 
 LXDBaseHashmap::LXDBaseHashmap() {
