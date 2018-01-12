@@ -218,8 +218,8 @@
 		EF146B271FFF85AA00BB2B1D /* object-c */ = {
 			isa = PBXGroup;
 			children = (
-				EF146B291FFF85AA00BB2B1D /* LXDTimerManager.mm */,
 				EF146B2A1FFF85AA00BB2B1D /* LXDTimerManager.h */,
+				EF146B291FFF85AA00BB2B1D /* LXDTimerManager.mm */,
 				EF146B2B1FFF85AA00BB2B1D /* NSObject+PerformTimer.h */,
 				EF146B281FFF85AA00BB2B1D /* NSObject+PerformTimer.m */,
 			);

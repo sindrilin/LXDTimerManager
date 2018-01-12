@@ -18,7 +18,11 @@
     
     __weak typeof(self) weakself = self;
     [[LXDTimerManager timerManager] registerCountDown: ^(long leftTime, bool *isStop) {
-        countDown(weakself, leftTime, (BOOL *)isStop);
+        if (weakself) {
+            countDown(weakself, leftTime, (BOOL *)isStop);
+        } else {
+            *isStop = true;
+        }
     } forSeconds: seconds withReceiver: self];
 }
 
