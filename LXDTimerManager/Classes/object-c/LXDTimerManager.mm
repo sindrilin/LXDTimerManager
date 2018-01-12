@@ -68,7 +68,6 @@ using namespace std;
     self.receives->insertReceiver((__bridge void *)receiver, countDown, seconds);
     [self _startupTimer];
     lxd_signal(self.lock);
-    
 }
 
 
@@ -133,8 +132,8 @@ using namespace std;
         [removeNodes enumerateObjectsWithOptions: NSEnumerationReverse usingBlock: ^(NSValue *obj, NSUInteger idx, BOOL * _Nonnull stop) {
             LXDReceiverNode *node = (LXDReceiverNode *)[obj pointerValue];
             node->receiver->lefttime--;
-            bool isStop = false;
             
+            bool isStop = false;
             node->receiver->callback(node->receiver->lefttime, &isStop);
             if (node->receiver->lefttime > 0 && !isStop) {
                 [removeNodes removeObjectAtIndex: idx];
