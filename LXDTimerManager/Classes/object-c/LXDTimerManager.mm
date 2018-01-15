@@ -12,6 +12,10 @@
 
 using namespace std;
 
+#ifndef lxd_unusally
+#define lxd_unusally(exp) ((typeof(exp))__builtin_expect((long)(exp), 0l))
+#endif
+
 #define lxd_signal(sema) dispatch_semaphore_signal(sema);
 #define lxd_wait(sema) dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
 
@@ -77,27 +81,7 @@ using namespace std;
         long delay = [[NSDate date] timeIntervalSinceDate: self.enterBackgroundTime];
         
         dispatch_suspend(self.timer);
-        for (unsigned int offset = 0; offset < _receives->entries_count; offset++) {
-            hash_entry_t *entry = _receives->hash_entries + offset;
-            LXDReceiverNode *header = (LXDReceiverNode *)entry->entry;
-            LXDReceiverNode *node = header->next;
-            
-            while (node != NULL) {
-                if (node->receiver->lefttime < delay) {
-                    node->receiver->lefttime = 0;
-                } else {
-                    node->receiver->lefttime -= delay;
-                }
-                
-                bool isStop = false;
-                node->receiver->callback(node->receiver->lefttime, &isStop);
-                if (node->receiver->lefttime <= 0 || isStop) {
-                    lxd_wait(self.lock);
-                    _receives->destoryNode(node);
-                    lxd_signal(self.lock);
-                }
-            }
-        }
+        [self _countDownWithInterval: delay];
         dispatch_resume(self.timer);
     }
 }
@@ -108,57 +92,69 @@ using namespace std;
 
 
 #pragma mark - Private
-- (void)_countDown {
-    NSMutableArray *removeNodes = @[].mutableCopy;
+- (void)_startupTimer {
+    if (self.timer != nil) { return; }
+    self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, self.timerQueue);
+    dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW + 1.0 * NSEC_PER_SEC, 1.0 * NSEC_PER_SEC, 0);
+    dispatch_source_set_event_handler(self.timer, ^{
+        [[LXDTimerManager timerManager] _countDownWithInterval: 1];
+    });
+    dispatch_resume(self.timer);
+}
+
+- (void)_countDownWithInterval: (unsigned long)interval {
+    __block unsigned long count = 0;
+    lxd_wait(self.lock);
+    [self _foreachNodeWithHandle: ^(LXDReceiverNode *node) {
+        if (node->receiver->lefttime < interval) {
+            node->receiver->lefttime = 0;
+        } else {
+            node->receiver->lefttime -= interval;
+        }
+        count++;
+    }];
+    lxd_signal(self.lock);
+    
+    if (count == 0) {
+        return;
+    }
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self _foreachNodeWithHandle: ^(LXDReceiverNode *node) {
+            bool isStop = false;
+            node->receiver->callback(node->receiver->lefttime, &isStop);
+            
+            if (lxd_unusally((isStop == true))) {
+                lxd_wait(self.lock);
+                node->receiver->lefttime = 0;
+                lxd_signal(self.lock);
+            }
+        }];
+        
+        dispatch_async(_timerQueue, ^{
+            lxd_wait(self.lock);
+            [self _foreachNodeWithHandle: ^(LXDReceiverNode *node) {
+                if (node->receiver->lefttime == 0) {
+                    _receives->destoryNode(node);
+                }
+            }];
+            lxd_signal(self.lock);
+        });
+    });
+}
+
+- (void)_foreachNodeWithHandle: (void(^)(LXDReceiverNode *node))handle {
+    if (handle == nil) { return; }
     for (unsigned int offset = 0; offset < _receives->entries_count; offset++) {
         hash_entry_t *entry = _receives->hash_entries + offset;
         LXDReceiverNode *header = (LXDReceiverNode *)entry->entry;
         LXDReceiverNode *node = header->next;
         
         while (node != NULL) {
-            [removeNodes addObject: [NSValue valueWithPointer: (void *)node]];
+            handle(node);
             node = node->next;
         }
     }
-    
-    if (removeNodes == 0 && self.timer != nil) {
-        lxd_wait(self.lock);
-        dispatch_cancel(self.timer);
-        self.timer = nil;
-        lxd_signal(self.lock);
-    }
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [removeNodes enumerateObjectsWithOptions: NSEnumerationReverse usingBlock: ^(NSValue *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            LXDReceiverNode *node = (LXDReceiverNode *)[obj pointerValue];
-            node->receiver->lefttime--;
-            
-            bool isStop = false;
-            node->receiver->callback(node->receiver->lefttime, &isStop);
-            if (node->receiver->lefttime > 0 && !isStop) {
-                [removeNodes removeObjectAtIndex: idx];
-            }
-        }];
-        
-        dispatch_async(_timerQueue, ^{
-            lxd_wait(self.lock);
-            for (id obj in removeNodes) {
-                LXDReceiverNode *node = (LXDReceiverNode *)[obj pointerValue];
-                _receives->destoryNode(node);
-            }
-            lxd_signal(self.lock);
-        });
-    });
-}
-
-- (void)_startupTimer {
-    if (self.timer != nil) { return; }
-    self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, self.timerQueue);
-    dispatch_source_set_timer(self.timer, DISPATCH_TIME_NOW, 1.0 * NSEC_PER_SEC, 0);
-    dispatch_source_set_event_handler(self.timer, ^{
-        [[LXDTimerManager timerManager] _countDown];
-    });
-    dispatch_resume(self.timer);
 }
 
 
