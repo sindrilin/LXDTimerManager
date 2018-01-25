@@ -99,8 +99,8 @@ bool LXDReceiverHashmap::compare(LXDReceiverNode *node, void *obj) {
 
 LXDReceiver *LXDReceiverHashmap::create_receiver(void *obj, LXDReceiverCallback callback, long lefttime) {
     LXDReceiver *receiver = new LXDReceiver();
+    receiver->callback = [callback copy];
     receiver->objaddr = (uintptr_t)obj;
-    receiver->callback = callback;
     receiver->lefttime = lefttime;
     return receiver;
 }
