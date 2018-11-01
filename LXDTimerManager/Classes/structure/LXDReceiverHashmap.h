@@ -20,11 +20,11 @@ public:
     ~LXDReceiverHashmap();
     
     bool insertReceiver(void *obj, LXDReceiverCallback callback, unsigned long lefttime);
+    bool compare(LXDReceiverNode *node, void *obj);
     LXDReceiverNode *lookupReceiver(void *obj);
     void destoryNode(LXDReceiverNode *node);
     
 private:
-    bool compare(LXDReceiverNode *node, void *obj);
     LXDReceiver *create_receiver(void *obj, LXDReceiverCallback callback, long lefttime);
 };
 

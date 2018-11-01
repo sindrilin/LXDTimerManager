@@ -34,4 +34,10 @@ typedef void(^LXDObjectCountDown)(id receiver, NSInteger leftTime, BOOL *isStop)
  */
 - (void)beginCountDown: (LXDObjectCountDown)countDown forSeconds: (NSInteger)seconds;
 
+/*!
+ *  @method stopCountDown
+ *  停止倒计时任务
+ */
+- (void)stopCountDown;
+
 @end

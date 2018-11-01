@@ -41,4 +41,12 @@ typedef void(^LXDTimerCallback)(long leftTime, bool *isStop);
                forSeconds: (NSUInteger)seconds
              withReceiver: (id)receiver;
 
+/*!
+ *  @method unregisterCountDownTaskWithReceiver:
+ *  取消倒计时任务注册
+ *
+ *  @param  receiver     注册任务的对象
+ */
+- (void)unregisterCountDownTaskWithReceiver: (id)receiver;
+
 @end

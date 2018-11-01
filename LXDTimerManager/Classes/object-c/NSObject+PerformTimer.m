@@ -26,5 +26,9 @@
     } forSeconds: seconds withReceiver: self];
 }
 
+- (void)stopCountDown {
+    [[LXDTimerManager timerManager] unregisterCountDownTaskWithReceiver: self];
+}
+
 
 @end

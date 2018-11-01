@@ -74,6 +74,20 @@ using namespace std;
     lxd_signal(self.lock);
 }
 
+- (void)unregisterCountDownTaskWithReceiver: (id)receiver {
+    void *obj = (__bridge void *)receiver;
+    if (obj == NULL) {
+        return;
+    }
+    lxd_wait(self.lock);
+    [self _foreachNodeWithHandle: ^(LXDReceiverNode *node) {
+        if (_receives->compare(node, obj) == true) {
+            _receives->destoryNode(node);
+        }
+    }];
+    lxd_signal(self.lock);
+}
+
 
 #pragma mark - Notification
 - (void)applicationDidBecameActive: (NSNotification *)notif {
