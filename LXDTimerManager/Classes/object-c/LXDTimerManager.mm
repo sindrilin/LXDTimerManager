@@ -80,9 +80,10 @@ using namespace std;
         return;
     }
     lxd_wait(self.lock);
+    __weak typeof(self) weakself = self;
     [self _foreachNodeWithHandle: ^(LXDReceiverNode *node) {
-        if (_receives->compare(node, obj) == true) {
-            _receives->destoryNode(node);
+        if (weakself.receives->compare(node, obj) == true) {
+            weakself.receives->destoryNode(node);
         }
     }];
     lxd_signal(self.lock);
@@ -147,7 +148,7 @@ using namespace std;
         
         __weak typeof(self) weakself = self;
         dispatch_async(_timerQueue, ^{
-            lxd_wait(self.lock);
+            lxd_wait(weakself.lock);
             [self _foreachNodeWithHandle: ^(LXDReceiverNode *node) {
                 if (node->receiver->lefttime == 0) {
                     weakself.receives->destoryNode(node);
