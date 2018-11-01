@@ -135,20 +135,20 @@ using namespace std;
     }
     
     dispatch_async(dispatch_get_main_queue(), ^{
+        __weak typeof(self) weakself = self;
         [self _foreachNodeWithHandle: ^(LXDReceiverNode *node) {
             bool isStop = false;
             node->receiver->callback(node->receiver->lefttime, &isStop);
             
             if (lxd_unusally((isStop == true))) {
-                lxd_wait(self.lock);
+                lxd_wait(weakself.lock);
                 node->receiver->lefttime = 0;
-                lxd_signal(self.lock);
+                lxd_signal(weakself.lock);
             }
         }];
         
-        __weak typeof(self) weakself = self;
         dispatch_async(_timerQueue, ^{
-            lxd_wait(weakself.lock);
+            lxd_wait(self.lock);
             [self _foreachNodeWithHandle: ^(LXDReceiverNode *node) {
                 if (node->receiver->lefttime == 0) {
                     weakself.receives->destoryNode(node);
